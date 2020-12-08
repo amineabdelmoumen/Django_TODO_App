@@ -1,0 +1,31 @@
+{% load widget_tweaks %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    
+    <title>Document</title>
+</head>
+<body>
+    <div id="block">
+        <div id="input_block">
+            <form method="POST">
+                {% render_field form.Booktitle id='input' %}
+                {% csrf_token %}
+                
+                <Button ></Button>id="input_Button" type="submit">Add New book title</Button>
+            </form>           
+             <ul>                
+                     {% for todo in Todos%}
+                    <li id="list_element">{{todo.Booktitle}} <div id="two_Button"><a href="{% url 'update_todo' todo.id %}"> <Button id="date_Button"> Update </Button></a>
+                        <a href="{%
+                             url 'delete_todo' todo.id %}"> <button id="delete_Button" >Delete</button></a></div>                                           
+                  {% endfor %}               
+              </ul>            
+        </div>
+    </div>  
+</body>
+</html>

@@ -1,0 +1,51 @@
+body{
+      background-color: slateblue;
+}
+#block{
+ position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border: 5px  yellowgreen;;
+  padding: 15px;
+  background-color: yellowgreen;
+}
+#input {
+    height: 37px;
+    width:300px;
+    border-radius: 4px;
+    border: 4px solid rgb(238, 127, 0); ;
+    
+}
+#input_Button{
+  position: relative;
+  top:-10px;
+  padding:6px 0 6px 0;
+	font:bold 13px Arial;
+	background:#478bf9;
+	color:#fff;
+	border-radius:px;
+	width:100px;
+	border:none;
+}
+#two_Button{
+    position: relative; 
+    margin-right: 1px;
+    margin-left: auto;
+
+}
+#list_element{
+  height: 40px;
+  margin-bottom: 5px;
+  text-decoration: none;
+  margin-left: 1px;
+  background-color:#00e1ff;
+}
+#delete_Button{
+  background-color: red;
+  color:white;
+}
+ #date_Button{
+  background-color: navy;
+  color:white;
+}
