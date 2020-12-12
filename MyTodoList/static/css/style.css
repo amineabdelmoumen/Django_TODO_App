@@ -20,18 +20,22 @@ body{
 #input_Button{
   position: relative;
   top:-10px;
+  -ms-grid-row-align: center;
   padding:6px 0 6px 0;
-	font:bold 13px Arial;
+	font:bold 13px italic;
 	background:#478bf9;
 	color:#fff;
-	border-radius:px;
-	width:100px;
+	border-radius:3px;
+  width:100px;
+  height: 37px;
 	border:none;
 }
 #two_Button{
     position: relative; 
     margin-right: 1px;
     margin-left: auto;
+    margin-top: 6px;
+
 
 }
 #list_element{
@@ -40,12 +44,19 @@ body{
   text-decoration: none;
   margin-left: 1px;
   background-color:#00e1ff;
+  font-style: italic;
+  font-size: large;
+  font-weight: bold;
 }
 #delete_Button{
   background-color: red;
   color:white;
+  border:white;
+  border-radius:3px;
 }
  #date_Button{
   background-color: navy;
   color:white;
+  border-color:navy;
+  border-radius:3px;
 }

@@ -16,13 +16,13 @@
                 {% render_field form.Booktitle id='input' %}
                 {% csrf_token %}
                 
-                <Button ></Button>id="input_Button" type="submit">Add New book title</Button>
+                <Button id="input_Button" type="submit">Add Book</Button>
             </form>           
              <ul>                
                      {% for todo in Todos%}
                     <li id="list_element">{{todo.Booktitle}} <div id="two_Button"><a href="{% url 'update_todo' todo.id %}"> <Button id="date_Button"> Update </Button></a>
-                        <a href="{%
-                             url 'delete_todo' todo.id %}"> <button id="delete_Button" >Delete</button></a></div>                                           
+                        <a href="{% url 'delete_todo' todo.id %}"> <button id="delete_Button" >Delete</button></a></div>
+                                                                        
                   {% endfor %}               
               </ul>            
         </div>
